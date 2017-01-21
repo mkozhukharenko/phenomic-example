@@ -7,6 +7,7 @@ import PhenomicLoaderFeedWebpackPlugin
   from "phenomic/lib/loader-feed-webpack-plugin"
 import PhenomicLoaderSitemapWebpackPlugin
   from "phenomic/lib/loader-sitemap-webpack-plugin"
+import CopyWebpackPlugin from "copy-webpack-plugin"
 
 import pkg from "./package.json"
 
@@ -279,6 +280,13 @@ export default (config = {}) => {
           { compress: { warnings: false } }
         ),
       ],
+
+      // to make Netlify CMS work
+      // we have to tell to Webpack to copy our /admin folder :
+      new CopyWebpackPlugin([
+        {from: 'admin', to: 'admin'},
+      ]),
+
     ],
 
     output: {
