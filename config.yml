@@ -4,7 +4,7 @@ backend:
   branch: master # replace if you want netlify-cms publish on a different branch
 
 public_folder: "content" # the same as your phenomic.source in your package.json
-media_folder: "content/assets" # the same as your phenomic.assets in your package.json
+media_folder: "assets" # the same as your phenomic.assets in your package.json
 
 collections:
   - name: "post"
