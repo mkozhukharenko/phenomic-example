@@ -17,7 +17,7 @@
     "CNAME": false,
     "source": "content",
     "assets": {
-      "route": "string",
+      "route": "assets",
       "path": "http://stoker-cat-15858.netlify.com/assets/"
     }
   },
