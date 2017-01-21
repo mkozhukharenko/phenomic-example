@@ -3,6 +3,7 @@ backend:
   repo: mkozhukharenko/phenomic-example
   branch: master # replace if you want netlify-cms publish on a different branch
 
+public_folder: "content/assets" # the same as your phenomic.source in your package.json
 media_folder: "content/assets" # Folder where user uploaded files should go
 
 collections:
