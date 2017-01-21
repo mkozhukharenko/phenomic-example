@@ -14,9 +14,7 @@
     "test": "npm run build"
   },
   "phenomic": {
-    "CNAME": false,
-    "source": "content",
-    "assets": "assets"
+    "CNAME": false
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
